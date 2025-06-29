@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f3e8ff, #e0d4f7); /* Soft lavender gradient */
+  color: #333;
+}
+
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(170, 130, 255, 0.1);
+  border: 2px solid #d8b4f8;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #7b2cbf; /* Deep lavender */
+}
+
+#display {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #4b2c57;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(123, 44, 191, 0.15);
+  transition: transform 0.2s, background 0.3s;
+}
+
+#startPauseBtn {
+  background: #a78bfa; /* Lavender */
+}
+
+#lapBtn {
+  background: #c084fc; /* Soft violet */
+}
+
+#resetBtn {
+  background: #e879f9; /* Orchid pink */
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.lap-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.lap-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #7b2cbf;
+}
+
+#laps {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-left: 10px;
+  list-style: decimal;
+}
+
+#laps li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #4b2c57;
+}
